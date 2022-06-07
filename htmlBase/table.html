@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+</head>
+<body>
+    <!-- table은 표(행과 열)를 만드는 태그 -->
+    <!-- <h2>비상연락망</h2> 웹접근성에 부합하지 않음-->
+    <figure>
+        <figcaption>
+            <p>비상연락망</p>
+        </figcaption>
+        <table border="1"> <!--border는 테두리 속성 기본 이중선이다 디테일한 설정은 css로 바꾼다-->
+            <tr>
+                <th>이름</th><th>전화번호</th><th>주소</th><!--table head : 제목-->
+            </tr><!--table row : 행-->
+            <tr>
+                <td>정세영</td><td>010-0000-0000</td><td>서울시 서대문구</td><!--table data : 내용-->
+            </tr>
+            <tr>
+                <td>김방덕</td><td>010-0020-0304</td><td rowspan="2">서울시 중랑구</td><!--table data : 내용 | rowspan : 행합치기-->
+            </tr>
+            <tr>
+                <td>박서영</td><td>010-0000-0000</td><!--table data : 내용-->
+            </tr>
+            <tr>
+                <td colspan="3">매월 2째주 토요일 모임</td><!--colspan : 열합치기  -->
+            </tr>
+        </table>
+    </figure>
+    <!-- <h2>주간 식단표</h2> 웹접근성에 부합하지 않음 -->
+    <table border="1">
+        <caption>
+            <strong>주간식단표</strong>
+        </caption> <!--웹접근성에 부합하는 테이블 제목-->
+        <thead>
+            <tr>
+                <th>시간</th><th>월</th><th>화</th>
+                <th>수</th><th>목</th><th>금</th><th>비고</th>
+            </tr>
+        </thead> <!--thead를 통해 첫번째 행이 제목 행임을 알려줄 수 있다 <웹접근성>-->
+        <tbody>
+            <tr>
+                <td>아침</td>
+                <td>김치찌개</td>
+                <td>된장찌개</td>
+                <td rowspan="3">자율배식</td>
+                <td>비빔밥</td>
+                <td>순대국</td>
+                <td rowspan="3">시간엄수</td>
+            </tr>
+            <tr>
+                <td>점심</td>
+                <td>칼국수</td>
+                <td>비빔국수</td>
+                <td colspan="2">라면</td>
+            </tr>
+            <tr>
+                <td>저녁</td>
+                <td>콩나물국</td>
+                <td>순대국</td>
+                <td>부대찌개</td>
+                <td>볶음밥</td>
+            </tr>
+        </tbody><!--tbody를 통해 표의 본문을 알려줄 수 있다 <웹접근성>-->
+        <tfoot>
+            <tr>
+                <td colspan="7">※ 배식 시간은 12시부터 1시까지입니다.</td>
+            </tr>
+        </tfoot><!--tfoot을 통해 테이블의 요약문을 알려줄 수 있다 -생략가능- <웹접근성>-->
+    </table>
+    
+</body>
+</html>
+<!--  -->

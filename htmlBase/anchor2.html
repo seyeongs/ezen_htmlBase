@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지맵</title>
+</head>
+<body>
+    <!-- <a href="#"> 빈링크 -->
+    <img src="../images/kids.jpg" alt="" usemap="#favorites">
+    <map name="favorites">
+        <!--coords 속성은 좌표 값을 부여한다. shape이"rect"일 경우 "x,y,end_x,end_y"
+        "circle"일 경우 "x,y,반지름"이다-->
+        <area shape="rect" coords="10,10,160,200" 
+        href="http://cafe.naver.com" target="_blank"> 
+        <area shape="circle" coords="100,50,50"
+        href="http://cafe.naver.com" target="_blank">
+        <!-- <area shape="poly" coords="""
+        href="http://cafe.naver.com" target="_blank"> --> <!--"poly"는 외부프로그램에서 좌표를 따와서 쓴다-->
+        <area shape="rect" coords="220, 10, 380, 200"
+        href="http://www.facebook.com" target="_blank">
+        <!--브라우져에서 shift키를 누르고 클릭하면 영역을 볼 수 있다  -->
+    </map>
+    <br>
+</body>
+</html>
+<!--  -->

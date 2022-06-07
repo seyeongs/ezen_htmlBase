@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>링크태그</title>
+    <title>하이퍼 링크</title>
 </head>
 <body>
-    <a href=""></a>
+    <P id="top"></P>
+    <h2><a href="#news">오늘의 핫뉴스</a></h2><!--#은 id를 뜻함-->
+    <a href="http://www.naver.com" target="_blank" >네이버</a>
+    <!--anchor태그  href 속성에 http:프로토콜 값을 꼭 줘야함 | target 속성의 기본값은 "_self"현재창에서 링크로 이동, "_blank" 새창에서 링크로 이동-->
+    <!-- 
+        top과 parent는 iframe에서 쓸수 있다 
+        _top은 iframe을 벗어나 전체화면으로 뜬다
+        _parent는 부모 프레임에 표시해준다 다중 iframe일 경우 유용
+    -->
+    <br>
+    <a href="http://www.imbc.com" target="_blank">
+        <img src="img/watch.jpg" alt="시계">
+    </a>
+    <br>
+    <a href="text.html">오늘의 여행지</a><!--다른 html 문서로 이동-->
+    <img src="../images/Koala.jpg" alt="코알라">
+    <img src="../images/Penguins.jpg" alt="펭귄들">
+    <p id="news">
+        d주 동부에 서식하는 오스트레일리아 유대상목 쌍절치목 코알라과에 속하는 동물이다.
+
+        생김새가 곰처럼 생겼기 때문에(일단 학명인 Phascolarctos에 무슨 글자가 들어가는지 보자.)[1] 토종곰, 즉 네이티브 베어(Native Bear)라고 부르기도 하며 과거에는 나무곰(Tree Bear)이나 원숭이곰(Monkey Bear)이라는 명칭도 있었다.[2] 주머니곰, 나무타기주머니곰 등으로도 불린다지만 생활사 등 여러 면에서는 오히려 나무늘보와 가깝다고 볼 수 있다.[3][4] 한마디로 유대류 버전 나무늘보인 셈. 애초에 호주의 유대류 중에는 곰에 상응하는 종이 없다. 유대류의 다양성을 생각해 보면 이상한 일.[5] 생물학적으로 가장 가까운 동물은 웜뱃이라고 한다.
+        
+        북실북실하고 보드라운 털과 둥글둥글한 생김새 때문에 인기가 많아 살아 있는 테디베어라고도 불리며, 유칼립투스 나무에 매달린 코알라 어미와 등에 업힌 새끼의 모습은 호주를 상징하는 모습 중 하나로 어필하고 있으며 호주 홍보에서도 코알라는 캥거루와 함께 필수요소다. 그래서인지 상품화가 아주 잘 된 동물 중 하나이다.
+    </p>
+    <p>
+        황제펭귄의 경우 보통 수명은 20년을 조금 넘으며 길면 30년도 넘길 수 있다. 조류 중에서 꽤 오래 사는 편. 가장 오래 산 펭귄으로는 덴마크의 동물원에 있는 젠투펭귄으로, 2020년 기준 41세를 기록했다. #
+
+    </p>
+    <p><a href="#top">맨위로</a></p>
+    
+    
 </body>
 </html>
+<!--  -->
