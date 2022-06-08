@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러줄 입력과 선택 요소</title>
+</head>
+<body>
+    <h2>소개극ㄹ</h2>
+    <textarea cols="50" rows="10"></textarea>
+    <form action="">
+        <h2>여름방학 특강신청</h2>
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <p>
+                <label for="">학번</label>
+                <input type="text" name="classNum">
+            </p>
+            <p>
+                <label for="">성명</label>
+                <input type="text" name="na">
+            </p>
+            <p>
+                <label for="">학과</label>
+                <select name="class">
+                    <option value="archi">건축공학과</option>
+                    <option value="machanic">기계공학과</option>
+                    <option value="indust">산업공학과</option>
+                    <option value="elec">전기공학과</option>
+                    <option value="computer">컴퓨터공학과</option>
+                    <option value="chemical">화학공학과</option>
+                    <option value="chemical">화학공학과</option>
+                    <option value="chemical">화학공학과</option>
+                </select>
+            </p>
+            <p>
+                <label for="">학과</label>
+                <select name="class" size="4" multiple>
+                    <option value="archi">건축공학과</option>
+                    <option value="machanic">기계공학과</option>
+                    <option value="indust">산업공학과</option>
+                    <option value="elec">전기공학과</option>
+                    <option value="computer" selected>컴퓨터공학과</option>
+                    <option value="chemical">화학공학과</option>
+                    <option value="chemical">화학공학과</option>
+                    <option value="chemical">화학공학과</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼관련태그들3</title>
+</head>
+<body>
+    <form action="" method="get">
+        <p>
+            <label>URL</label>
+            <input type="url">           
+        </p>
+        <p>
+            <label>이메일</label>
+            <input type="email">
+        </p>
+        <p>
+            <label>전화번호</label>
+            <input type="tel" pattern="\d{3}-d{3,4}-d{4}"><!--모바일 환경에서 숫자 키패드를 띄워준다-->
+        </p>
+
+        <input type="submit" value="전송">
+    </form>
+    <form action="">
+        <label for="">수량(최대5개)</label>
+        <input type="number" value="1" min="1" max="5">
+        <input type="number" value="0" min="0" max="20" step="2">
+        <p>
+            <label for="">수량(최대5개)</label>
+            <input type="range" value="1" min="1" max="50">
+        </p>
+        <p>
+            <label for="">색상</label>
+            <input type="color">
+        </p>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>과 티셔츠 설문</legend>
+            <p>올해 과티를 만들려고 합니다 원하는 색상을 골라주세요</p>
+            <label for="">선호색상</label>
+            <input type="color" value="#00f">
+        </fieldset>
+    </form>
+
+</body>
+</html>
+<!--  -->
