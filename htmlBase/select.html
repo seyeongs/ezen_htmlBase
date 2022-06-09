@@ -47,7 +47,37 @@
                     <option value="chemical">화학공학과</option>
                 </select>
             </p>
+            <p>
+                <label for="">학과</label>
+                <select name="class">
+                    <optgroup label="공과대학">
+                        <option value="archi">건축공학과</option>
+                        <option value="machanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기공학과</option>
+                        <option value="computer">컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                        <option value="chemical">화학공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </optgroup>
+                    <optgroup label="인문대학">
+                        <option value="history">사학과</option>
+                        <option value="lang">어문학부</option>
+                        <option value="philo">철학</option>
+                    </optgroup>
+                </select>
+            </p>
+            <input type="text" list="tech" name="class"><!--리스트 속성값과 데이터 리스트 id값이 같아야한다-->
+            <datalist id="tech"> <!--input과 연결됨-->
+                <option value="archi" label="건축공학과"></option> <!---->
+                <option value="machanic" label="기계공학과"></option>
+                <option value="indust" label="산업공학과"></option>
+                <option value="elec" label="전기공학과"></option>
+                <option value="computer" label="컴퓨터공학과"></option>
+                <option value="chemical" label="화학공학과"></option>
+            </datalist>
         </fieldset>
     </form>
 </body>
 </html>
+<!--  -->

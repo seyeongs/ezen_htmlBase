@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* @import url("common.css"); */
+
+/* 
+-기본문법-
+선택자 {
+    속성:속성값;
+} 
+*/
+
+h1 {
+    color: red;
+    font-size: 20px;
+}
+p {
+    color: blue;
+}
