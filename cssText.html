@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+    <title>택스트 관련 스타일(글꼴 관련)</title>
+    <style>
+        @font-face{
+            font-family: "trana";
+            src: url(fonts/trana.eot),
+                url(fonts/trana.woff)format("woff"),
+                url(fonts/trana.ttf)format("truetype");
+        }
+
+        h2{
+            font-family: 'Hi Melody', cursive;
+        }
+
+        h1{
+            font-family: "trana";
+        }
+    </style>
+    <!-- 
+        클라이언트 사용자 컴퓨터에서 해당 글꼴을
+        지원하지 않으면 안보임
+        
+        시스템 글꼴은 대부분 컴퓨터에 설치되어 있다
+        ex)굴림 바탕, sans-serif, serif
+
+        ※글꼴 저작권 주의※
+
+        How to
+        1. 다운로드 방식
+            클라이언트가 웹사이트 방문할 때 글꼴을 브라우져에 임시로
+            다운로드 시켜준다.
+            단 폰트 파일이 서버측에 있어야 한다
+            @font-face{}
+
+        2. CDN방식
+            네트워크를 통해서 클라이언트 브라우져에 보여준다
+            단점은 매번 google webfont를 연결해야하기 떄문에
+            렉이 걸릴 수 있다. 폰트파일 필요 x
+                <link>방식은 태그로
+                @import 방식은 <style>태그 안에
+
+        <폰트 형식>
+        .eot :
+        .ttf :
+        .woff : 
+    -->
+</head>
+<body>
+    <h1>CORONA</h1>
+    <h2>css 선택자 수업</h2>
+    <p >프론트엔드 수업(CSS)</p>
+    <p>html5 - 홈페이지 뼈대</p> 
+    <p>CSS3 - 디자인, 레이아웃, ...</p>
+</body>
+</html>

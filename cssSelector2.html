@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자2</title>
+    <style>
+        body{
+            background-image: url(images/Koala.jpg);
+
+        }
+
+
+        #box {
+            font-family: "궁서";
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .cssRed{
+            color : hsl(300, 100%, 30%); 
+            /*
+            #ffffff 16진수로 색상 표현
+            rgb(255, 255, 255)
+            rgba(255,255,255,1~0) 투명도 추가
+            hsl(색상, 채도, 밝기)
+
+            */
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>오늘은 금요일</h2>
+        <p><span class="cssRed">CSS3</span> 선택자 공부중...</p>
+        <p>즐거운 주말 되세요</p>
+    </div><!--div영역으로 묶인 요소들도 모두 CSS 적용된다-->
+    <!--span으로 특정 영역만 인라인으로 영역을 줄 수 있다-->
+    <p>※ 다음주부터 <span class="cssRed">CSS3</span> 본격적으로 시작!!</p>
+</body>
+</html>
+<!--  -->

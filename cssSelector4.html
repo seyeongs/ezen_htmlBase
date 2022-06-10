@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식, 후손 선택자4</title>
+    <style>
+        #area > p {
+            color : blue;
+        }
+        #area p{
+            background-color: red;
+        }
+    </style>
+    <!--
+        부모>자식
+        부모 후손      
+
+        id나 class를 난발하는 것보다
+
+        자식, 후손 선택자를 적절히 사용하는 것이 좋다
+    -->
+</head>
+<body>
+    <div id="area">
+        <h2 >css 선택자 수업</h2>
+        <p >프론트엔드 수업(CSS)</p>
+        <p>html - 홈페이지 뼈대</p> 
+        <p>CSS3 - 디자인, 레이아웃, ...</p>
+        <h2>웹페이지 제작</h2>
+        <ul>
+            <li >페이지 구상</li>
+            <li>와이어 프레임</li>
+            <li>html제작</li>
+            <li>css 작업으로 완성</li>
+        </ul>
+        <div id="inner">
+            <p>나는 내부에 있는 단락</p>
+        </div>
+    </div>
+    <p>즐거운 주말 되세요</p>
+</body>
+</html>

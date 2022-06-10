@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 우선순위</title>
+    <style>
+        #week {
+            color: red;
+            
+        }
+        .ch {
+            color: aqua;
+        }
+        p{
+            color: blue !important; /* 아주 특별한 경우에 사용 우선순위 최우선*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>오늘은 금요일</h2>
+        <p class="ch">CSS3 선택자 공부중...</p>
+        <p id="week">즐거운 주말 되세요</p>
+    </div>
+    <p>※ 다음주부터 CSS3 본격적으로 시작!!</p>
+</body>
+</html>
+<!--
+    1순위 인라인 스타일  
+    2순위 id
+    3순위 class
+
+
+-->
