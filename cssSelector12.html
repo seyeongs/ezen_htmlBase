@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+    <style>
+        p::first-letter{
+            font-size: 2em;
+            color: red;
+        }
+        p::first-line{
+            background-color: yellow;
+        }
+        p::selection{
+            background-color: blue;
+            color: green;
+        }
+        h3::before{
+            content: "여름";
+            color: red;
+        }
+        h3::after{
+            content: "- 7월, 8월";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>오늘의 뉴스</h2>
+    <p>북한 김정은 북한 국무위원장이 지난 8일부터 사흘간 열린 노동당 중앙위원회 전원회의에서 크게 화를 낸 것으로 알려진 가운데 그 배경을 추측케하는 기사가 나와 눈길을 끌고 있습니다.</p>
+    <h3>감기조심하세요</h3>
+</body>
+</html>

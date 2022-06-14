@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트 관련 스타일</title>
+    <style>
+        #menu{
+            background-color: navy;
+            text-align: center;
+            
+        }
+        #menu > li{
+            list-style: none;
+            /* float: left; */
+            display: inline-block;
+            background-color: navy;
+            padding: 10px;
+        }
+
+        #menu>li:hover{
+            background-color: blue;
+        }
+
+        #menu a{
+            text-decoration: none;
+            color: #fff
+        } 
+        ol{
+            border: 1px solid;
+            /* list-style-type: decimal-leading-zero; */
+            list-style-type: hangul;
+            list-style-position: inside;
+        }
+
+    </style>
+    <!-- 홈페이지 메뉴는 주로 ul태그로 만든다네 -->
+    <!-- float으로 li 요소를 인라인 처럼 만들어준다 -->
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제품소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">자료실</a></li>
+    </ul>
+    <ol>
+        <li>html5</li>
+        <li>css3</li>
+        <li>javascript</li>
+        <li>jQuery</li>
+        <li>node.js</li>
+        <li>react</li>
+    </ol>
+</body>
+</html>

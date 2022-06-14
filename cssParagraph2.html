@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문단이미지 관련 스타일</title>
+    <style>
+        .vlign{
+            border: 1px solid;
+        }
+        .vlign > img{
+            vertical-align: middle;
+        }
+        #box{
+            width: 250px;
+            border: 1px solid;
+
+        }
+        #box p {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <p class="vlign">
+        꼬마 자동차
+        <img src="images/car_green.jpg" alt="">
+    </p>
+    <div id="box">
+        <p>이름 : 김철수</p>
+        <p>이메일 : qwasdasdasdasdasaeweq@naver.com</p>
+    </div>
+</body>
+</html>

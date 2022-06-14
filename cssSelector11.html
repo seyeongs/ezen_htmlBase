@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식 관련 가상 선택자</title>
+    <style>
+        #menu > li:first-child {
+            color: red;
+        }
+        #menu > li:last-child{
+            color: blue;
+        }
+        #menu > li:nth-child(2){
+            color: green;
+        }
+        #menu > li:nth-child(2n+1){
+            background-color: yellow;
+        }
+
+        table{
+            width: 200px;
+            border-collapse: collapse;
+            
+        }
+        td{
+            padding: 10px;
+        }
+        table tr:nth-child(2n+1){
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h2>오늘의 메뉴</h2>
+    <ul id="menu">
+        <li>부대찌개</li>
+        <li>된장찌개</li>
+        <li>김치찌개</li>
+        <li>비빔밥</li>
+        <li>냉면</li>
+        <li>칼국수</li>
+    </ul>
+    <h2>건강에 좋은 음시</h2>
+    <table border="1">
+        <tr><td>블루베리</td></tr>
+        <tr><td>귀리</td></tr>
+        <tr><td>토마토</td></tr>
+        <tr><td>시금치</td></tr>
+        <tr><td>베리</td></tr>
+        <tr><td>맒ㄴㅇ베리</td></tr>
+        <tr><td>ㅋㅌ트ㅜㅠㅊ베리</td></tr>
+        <tr><td>수박</td></tr>
+        <tr><td>멜론</td></tr>
+        <tr><td>르ㅝㄴㅇㅎ류</td></tr>
+        <tr><td>ㅊ퓨ㅡㅜㅌ츄</td></tr>
+        <tr><td>ㅂㅈ샤ㅐㅓ보</td></tr>
+        <tr><td>ㅛㅗㅂㄷ좋</td></tr>
+    </table>
+</body>
+</html>
+<!--  -->
