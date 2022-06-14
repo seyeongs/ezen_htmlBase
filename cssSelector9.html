@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자</title>
+    <style>
+        a:link{
+            text-decoration: none;
+            color: green;
+        }
+        a:visited{
+            text-decoration: none;
+            color: red;
+        }
+        a:hover, a:focus{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: yellow;
+
+        }
+    </style>
+    <!--
+        :link 방문하지 않음 
+        :visited 방문한 링크
+        :hover 링크에 마우스 올려있을 때
+        :active 링크 마우스 press 활성화 됐을 때
+        가상 선택자는 위 순서가 지켜져야 한다
+    -->
+</head>
+<body>
+    <ul>
+        <a href="#">한국방송공사</a>
+        <a href="#">한d국방송공사</a>
+    </ul>
+</body>
+</html>

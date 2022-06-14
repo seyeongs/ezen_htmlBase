@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상(상태)선택자</title>
+    <style>
+        input[type=text]:focus{
+            background-color: gray;
+        }
+        input:disabled{
+            background-color: antiquewhite;
+            border: 1px solid antiquewhite
+        }
+        p>label{
+            display: inline-block;
+            width: 100px;
+
+        }
+        input:checked +span{
+            font-weight: bold;
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="na">이름</label>
+            <input type="text" name="" id="na" value="박홍두" disabled>
+        </p>
+        <p>
+            <label for="tel">전화번호</label>
+            <input type="text" name="" id="tel">
+        </p>
+        <p>
+            <label for="addr">주소</label>
+            <input type="text" name="" id="addr">
+        </p>
+        <fieldset>
+            <legend>신청과목</legend>
+            <p>방학특강에 신청할 과목을 선택하세요</p>
+            <label for="">
+                <input type="radio" name="subject" value="excel">
+                <span>엑셀</span>
+            </label>
+            <label for=""><input type="radio" name="subject" value="powerpoint"><span>파워포인트</span></label>
+            <label for=""><input type="radio" name="subject" value="hangul"><span>한글</span></label>
+        </fieldset>
+    </form>
+</body>
+</html>

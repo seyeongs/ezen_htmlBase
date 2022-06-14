@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제 선택자 응용</title>
+    <style>
+        input[type="checkbox"]:checked +div{
+            height: 0px;
+        }
+
+        div{
+            width: 300px;
+            height: 270px;
+            border: 1px solid red;
+            overflow: hidden;
+            transition: 3s;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="checkbox"> 뉴스 감추기
+    <div>
+        <h2>오늘의 뉴스</h2>
+        <p>숙취가 뒤진다 학원 못나갔다 ㅠㅠ 날씨 너무 덥다</p>
+        <p>운동도 재꼈다 스펨에 밥 먹었다 컵라면도 먹었다 냉수 마시니 좀 괜춘</p>
+    </div>
+</body>
+</html>
