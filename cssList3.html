@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴 만들기</title>
+    <style>
+        #menu{
+            /* overflow: hidden; */
+        }
+        /* overflow:hidden; ul자식이 float이 되어도 자식태그를 감싸기 때문에 높이가 없어지지 않는다 */
+        #menu>li{
+            list-style: none;
+            padding:10px;
+            float: left;
+            background-color: darkblue;
+        }
+        #menu>li>a{
+            text-decoration: none;
+            padding:10px;
+            color: #fff;
+        }
+        p{
+            clear: both;
+            /* float속성을 해제하는 속성 */
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제품소개</a></li>
+        <li><a href="#">서비스</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">자료실</a></li>
+    </ul>
+    <p>피죤투</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 크기와 배치</title>
+    <style>
+        p{
+            display: inline-block;
+            border: 1px solid;
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+        }
+        #box{
+            visibility: hidden;
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            background-color: aqua;
+        }
+        img{
+            width: 300px;
+            transition: all 5000ms;
+            opacity: 0.1;
+        }
+        img:hover{
+            opacity: 1;
+        }
+    </style>
+    <!-- 요소 너비 = width+2(border+padding) -->
+    <!-- 요소 높이 = height+2(border+padding-->
+</head>
+<body>
+    <span>대하님ㄴ구</span>
+    <p>오늘은 수요일</p>
+    <span>우리나라</span>
+    <div id="box">
+        rrrrrr
+    </div>
+    <p>지금은 레이아웃 속성을 배운다</p>
+    <img src="images/Penguins.jpg" alt="">
+</body>
+</html>

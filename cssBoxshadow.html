@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 쉐도우 스타일</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+        .box1{
+            box-shadow: 5px 5px 15px 5px gray;
+            /* 가로 세로 흐림 번짐 색상 */
+        }
+        .box2{
+            box-shadow: 2px -2px 5px 0px rgba(0, 0, 0, 0.5);
+        }
+        .box3{
+            outline: 5px solid red;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
