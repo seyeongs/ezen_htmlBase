@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변형에 관한 속성</title>
+    <style>
+        div{
+            width: 250px;
+            height: 240px;
+            border: 1px solid;
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        .rotatex{
+            transform: rotateX(50deg);
+        }
+        #per {
+            perspective: 300px;
+            /* 회전하는 방향으로 원근감을 준다 */
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/girl.jpg" alt="">
+    </div>
+    <div id="nop">
+        <div class="rotatex">
+            <img src="images/girl.jpg" alt="">  
+        </div>
+    </div>
+    <div id="per">
+        <div class="rotatex">
+            <img src="images/girl.jpg" alt="">  
+        </div>
+    </div>
+</body>
+</html>

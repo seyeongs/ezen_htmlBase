@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변환 효과 스타일</title>
+    <style>
+        .trans1{
+            transition: all 0.5s ease-in-out;
+        }
+        .trans1:hover{
+            /* 
+            translate()
+            scale()
+            rotate()
+            skew()
+            */
+            transform: translateX(100px) translateY(50px) translate(-50px, 100px)
+                       scale(150%) rotate(360deg);
+            
+        }
+        .trans2{
+            transition: all 1s ease-in-out;
+        }
+        .trans2:hover{
+            transform: skewX(20deg) skewY(20deg);
+        }
+    </style>
+</head>
+<body>
+    <img class="trans1"src="images/car_green.jpg" alt=""><br>
+    <img class="trans2"src="images/car_red.jpg" alt="">
+</body>
+</html>

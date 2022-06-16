@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 너비 기준 정하기</title>
+    <style>
+        .box{   
+            width: 300px ;
+            height: 150px;
+            margin: 10px;
+        }
+        .box1{
+            box-sizing: content-box;
+            border: 2px solid red;
+            background-color: aqua;
+            padding: 30px;
+        }
+        .box2{
+            box-sizing: border-box;
+            border: 2px solid blue;
+            background-color: yellowgreen;
+            padding: 30px;
+        }
+    </style>
+    <!--
+        box-sizing 속성이 border-box인 경우 padding속성이나 border속성을 줘도 을 줘도 박스 크기가 커지지 않는다 따라서
+        내부 공간이 좁아지기 때문에 박스 안에 들어갈 내용의 크기가 작아진다
+    -->
+    <!--box-sizing 속성이 content-box(기본값)인 경우 padding과 border속성의 크기에 영향을 받는다-->
+</head>
+<body>
+    <div class="box box1">
+        <p>content박스로 구성</p>
+    </div>
+    <div class="box box2">
+        <p>border박스로 구성</p>
+    </div>
+</body>
+</html>
+<!--  -->

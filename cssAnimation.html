@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에니메이션</title>
+    <style>
+        @keyframes colorChange {
+            from{
+                background-color: antiquewhite;
+                border: 1px solid blue;
+                /* 전 */
+            }
+            to{
+                background-color: red;
+                border: 5px dotted green;
+                border-radius: 50%;
+                /* 후 */
+            }
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg)
+            }
+            to{
+                transform: rotate(90deg)
+            }
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            margin-bottom: 20px;
+            
+        }
+        #box1{
+            /* animation-name: colorChange;
+            animation-duration: 2s;
+            animation-direction: alternate; */
+            /* -iteration-count 2회 이상 줘야 된다 */
+            /* animation-iteration-count: 10; */
+            /* animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out; */
+            /* animation: colorChange 1s alternate infinite ease-in-out; */
+            animation: colorChange 1s alternate infinite ease-in-out, rotate 2s alternate infinite ease-in-out;
+        }
+        #box2{
+            animation: rotate 0.5s alternate infinite ease-in-out;
+            animation-delay: 2s;
+        }
+        #box1:hover{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        
+    </div>
+    <div id="box2">
+        
+    </div>
+</body>
+</html>
