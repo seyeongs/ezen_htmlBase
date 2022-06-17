@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치 방법 지정</title>
+    <style>
+        .box{
+           width: 100px;
+           height: 100px;
+           position: relative;
+
+        }
+        .box1{
+            background-color: red;
+            /* right: 20px; */
+            left:30px;
+            top: 30px;
+        }
+        .box2{
+            background-color: green;
+            left: 50px;
+            top: 50px;
+        }
+        .box3{
+            background-color: blue;
+            left: 70px;
+            top: 70px;
+        }
+    </style>
+    <!--
+    상대 위치 : relative |자신의 포지션을 기준
+    절대 위치 : absolute |부모 포지션을 기준
+    고정 위치 : fixed |화면 스크린을 기준
+    z-index: 포토샵의 레이어 처럼 계층을 두는 것, 숫자가 높을수록 앞으로(계층위) 온다. 
+             계층 위치를 세분화하여 사용하기 위해 널널하게 10단위로 준다
+     -->
+</head>
+<body>
+    <h1>오늘 배울 내용은</h1>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>

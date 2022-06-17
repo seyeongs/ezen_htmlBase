@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배치 방법 지정 absolute</title>
+    <style>
+        #area{
+            width: 500px;
+            height: 500px;
+            border: 1px solid;
+            position: relative;
+            /* body 아래 다른 부모영역도 relative이기 때문에 주로 relative로 준다  */
+
+        }
+        .box{
+           width: 100px;
+           height: 100px;
+           position: absolute;
+
+        }
+        .box1{
+            background-color: red;
+            left:10px;
+            top:10px;
+            z-index: 30;
+        }
+        .box2{
+            background-color: green;
+            left:30px;
+            top:30px;
+            z-index: 20;
+        }
+        .box3{
+            background-color: blue;
+            left:50px;
+            top:50px;
+            z-index: 10;
+        }
+        /* 
+        absolute로 위치를 지정할 때 부모요소의 포지션이 정해져 있지 않으면 
+        body의 위치를 기준으로 포지션이 지정된다
+        absolute의 각 꼭지 점은 left:0 right:0 top:0 bottom:0이다
+        */
+    </style>
+    <!--
+    상대 위치 : relative |자신의 포지션을 기준
+    절대 위치 : absolute |부모 포지션을 기준
+    고정 위치 : fixed |화면 스크린을 기준
+    z-index: 포토샵의 레이어 처럼 계층을 두는 것, 숫자가 높을수록 앞으로(계층위) 온다. 
+             계층 위치를 세분화하여 사용하기 위해 널널하게 10단위로 준다
+     -->
+</head>
+<body>
+    <h1>오늘 배울 내용은</h1>
+    <div id="area">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <!-- absolute는 부모가 필요하다..? -->
+</body>
+</html>

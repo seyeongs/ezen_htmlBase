@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>필터</title>
+    <style>
+        .img1{
+            /* filter: opacity(1%); */
+            filter: blur(20px);
+            transition: all 5s;
+        }
+        .img1:hover{
+            filter: blur(0px);
+        }
+
+        .img2{
+            filter: grayscale(100%);
+            transition: all 5s;
+        }
+        .img2:hover{
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <img class="img1" src="images/Penguins.jpg" alt="">
+    <img class="img2" src="images/girl.jpg" alt="">
+</body>
+</html>
+<!-- 책59p 참고 -->
