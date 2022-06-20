@@ -1,1 +1,222 @@
 @charset "utf-8";
+
+/* 초기화 (브라우저 기본 패딩과 마진 없애기)*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "맑은 고딕", sans-serif;
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+/*header영역*/
+header{
+    height: 150px;
+    overflow: hidden;
+}
+header > .logo{
+    float: left;
+    /* margin-top: 40px; */
+    padding-top: 40px;
+}
+header > .logo img{
+    width: 250px;
+}
+header > nav{
+    float: right;
+    padding-top: 70px;
+}
+nav > ul{
+    width: 600px;
+}
+nav li.dropdown{
+    float: left;
+    width: 200px;
+}
+nav li.dropdown > a{
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    /* 호버할 수 있는 영역을 늘려준다 */
+}
+nav li.dropdown > a:hover, nav li.dropdown:hover .dropbtn{
+    background-color: #7b422e;
+    color: white;
+}
+nav li.dropdown:hover ul.dropdown_content{
+    display: block;
+}
+nav ul.dropdown_content{ /*ul중에 클래스가 dropdown_content인*/
+    display: none;
+    width: 200px;
+    position: absolute;
+    background-color: rgba(255, 255,255, 0.8);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    /* 포지션 속성이 있어야 z-index가 기능한다 */
+}
+nav ul.dropdown_content a{
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+}
+nav ul.dropdown_content a:hover{
+    background-color: #bb692d;
+    color: white;
+}
+
+
+/*메인 이미지 영역*/
+#main_image{
+    height: 400px;
+    position: relative;
+}
+#main_image > .imgs{
+    height: 400px;
+    position: absolute;
+}
+#main_image > .welcome{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 100px;
+    background-color:  rgba(255, 255,255, 0.8);
+    text-align: center;
+    margin: -50px 0 0 -150px;
+    line-height: 50px;
+    border-radius: 10px;
+}
+#main_image > .welcome > h1{
+    color: #bb692d;
+}
+#main_image > .welcome > h2{
+    color: #6a6a6a;
+    font-size: 1.3em;
+}
+
+
+
+
+/* 메인 컨텐츠 영역 */
+#contents{
+    min-height: 500px;
+    /* 본문 내용은 확장을 고려 최소 높이로 지정 */
+}
+
+/* 공지사항 */
+#contents .notice{
+    width: 480px;
+    float: left;
+    margin-top: 20px;
+}
+#contents> .notice >h2{
+    text-align: center;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+    
+}
+#contents > .notice > table{
+    font-size: 0.9em;
+    color: #666;
+    width: 430px;
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+#contents > .notice > table  tr > th{
+    padding: 5px 0;
+
+}
+#contents > .notice > table  tr > td{
+    padding: 5px;
+}
+#contents > .notice > table tr:nth-child(2n){
+    background-color: rgba(153, 153, 102, 0.5);
+}
+
+
+/* 파트너 광고 */
+#contents .partner{
+    width: 480px;
+    float: right;
+    margin-top: 20px;
+}
+#contents> .partner >h2{
+    text-align: center;
+    
+}
+#contents .partner .partner_info{
+    margin-top: 10px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+/* 아이콘 */
+#contents .icons{
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#contents .icons .icon{
+    display: inline-block;
+    width: 160px;
+    margin: 0 20px;
+}
+#contents .icons .icon img{
+    width :150px;
+}
+
+#contents .icons .icon button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #bb692d;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+}
+#contents .icon > button:hover{
+    background-color: #99cc66;
+
+}
+
+
+
+/* footer 영역 */
+footer{
+    height: 150px;
+    background-color: #bb692d;
+    margin-top: 30px;
+    padding: 20px;
+}
+footer > ul{
+    float: left;
+}
+footer > ul > li{
+    float: left;
+    margin: 10px;
+    margin-top: 30px;
+}
+footer > ul > li > a{
+    color: white;
+}
+footer > address{
+    margin-top: -10px;
+    float: right;
+    color: white;
+    font-style: normal;
+    font-size: 0.8em;
+    line-height: 20px;
+    margin-right: 150px;
+}
