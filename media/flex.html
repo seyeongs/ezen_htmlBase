@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 $_$</title>
+    <style>
+        .flexbox{
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* 기본은 배치 방향 순서 변경 가능 기본 row */
+
+            /* flex-wrap: wrap; */
+            /* 기본값 보다 줄어들면 여러줄로 표시. 기본값이 있어야한다 기본 nowrap */
+
+            /* flex-flow: row-reverse wrap; */
+            /* direction과 wrap설정을 같이 줄 수 있다 */
+
+            background-color: #ccc;
+            height: 200px;
+        }
+        .flexbox div{
+            background: lightgreen;
+            margin: 10px;
+            /* flex-grow: 0; */
+            /* 늘일값 */
+
+            /* flex-shrink: 0; */
+            /* 줄일값 */
+
+            /* flex-basis: 200px; */
+            /* 기본값 */
+
+            /* flex: 0 0 200px; */
+            /* 이렇게 한번에 쓰는 것이 더 많이 쓰는 방법 */
+
+            /* flex: 1 1 0; */
+            /* grow와 shrink에 모두 1값을 주면 기본값은 의미가 없어지므로 0 */
+            /* flex: 1; 이랑 같다 */
+
+            /* flex: 0 1 200px; */
+            /* grow와 shrink 둘 중 하나가 0이라면 기본값을 줘야한다*/
+
+        }
+        .box1{
+            /* order: 2; */
+            /* order: 배치 순서를 정해줄 수 있다 */
+            flex: 1;
+            /* flex를 따로 줘서 공간 차지 비율을 설정할 수 있다 */
+        }
+        .box2{
+            /* order: 9; */
+            flex: 2 2 0;
+        }
+        .box3{
+            /* order: 5; */
+            flex: 1;
+        }
+        .box4{
+            /* order: 4; */
+            flex: 1;
+        }
+        .box5{
+            /* order: 4; */
+            flex: 1;
+        }
+
+
+    </style>
+    <!-- 
+        flex: 
+        flex를 부여받은 요소 안에 있는 요소들을 유연하게 배치할 수 있는 방법
+        vender prefix 필요 
+
+    -->
+</head>
+<body>
+    <div class="flexbox">
+        <div class="box1">
+            <h1>1</h1>
+        </div>
+        <div class="box2">
+            <h1>2</h1>
+        </div>
+        <div class="box3">
+            <h1>3</h1>
+        </div>
+        <div class="box4">
+            <h1>4</h1>
+        </div>
+        <div class="box5">
+            <h1>5</h1>
+        </div>
+
+    </div>
+</body>
+</html>
