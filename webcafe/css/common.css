@@ -237,6 +237,7 @@ header{
     font-weight: bold;
     top: 75px;
     left: 400px;
+    z-index: 11;
     animation: textAni 1s;
 }
 #visual::before, #visual::after{
@@ -247,6 +248,10 @@ header{
     left: 0;
     width: 100%;
     height: 140px;
+    animation: flowerAni 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
 }
 #visual::before{
     background-image: url("images/ani_flower_01.png"),
@@ -255,6 +260,7 @@ header{
     background-position: 0 5px, 670px 0;
 }
 #visual::after{
+    animation-delay: 1s;
     background-image: url("images/ani_flower_03.png"),
                       url("images/ani_flower_04.png");
     background-repeat: no-repeat;
@@ -284,21 +290,106 @@ header{
 }
 /* 비쥬얼 영역 종료 */
 
-/* 메인 컨텐츠 영역 시작 */
+/* 메인 컨텐츠 영역 시작(큰 틀)*/
 #contentsArea{
     min-height: 400px;
     padding: 30px 0 30px 30px;
+    background-color: #fff;
+    border-radius: 15px 15px 0;
+    display: flex;
+    flex-flow: row wrap;
 }
 /* 메인 컨텐츠 영역 종료 */
 
 /* 슬로건 영역 시작 */
 #slogan{
     padding: 15px 0;
+    position: relative;
+}
+#slogan > h2{
+    /* IR기법: Image Replacement: 텍스트를 감추고 배경 이미지만  보이게하는 기법(text-indent, padding, position)*/
+    width: 110px;
+    height: 90px;
+    background: url("images/coffee.png") no-repeat;
+    background-size: 110px 90px;
+    text-indent: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    bottom: -25px;
+    left: 30px;
+}
+#slogan > p{
+    margin: 0 100px 0 200px;
+    color: #a09784;
+    font-size: 1.1em;
+}
+#slogan q{
+    font-weight: bold;
+}
+/* q태그의 따옴표는 ::befoe ::after에 있다 */
+#slogan q:before{
+    font-size: 3em;
+    color: #765725;
+    position: relative;
+    top: 15px;
+    left: -5px;
+} 
+#slogan q::after{
+    content: "";
 }
 /* 슬로건 영역 종료*/
 
 /* 푸터 영역 시작 */
 #footer{
     padding: 15px 0;
+    background-image: linear-gradient(to bottom, #c7c7c7 0%, #fff 70%, #fff 100%);
+}
+#footerInner{
+    position: relative;
+}
+.footerLogo{
+    position: absolute;
+    left: 35px;
+    top: 45px;
+
+}
+.guide, address, .copyright{
+    margin-left: 200px;
+    margin-right: 100px;
+}
+.techLogoArea{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.guide{
+    background: #7b8385;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.guide li{
+    display: inline-block;
+}
+.guide a{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px 10px 0;
+}
+.guide a::before{
+    content: "|";
+    padding-right: 20px;
+}
+.guide>ul>li:first-child>a::before{
+    content: "";
+}
+address{
+    font-style: normal;
+    margin-bottom: 5px;
+}
+address>span{
+    margin-right: 10px;
 }
 /* 푸터 영역 시작 */
