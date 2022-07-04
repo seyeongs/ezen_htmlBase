@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var student = {};
+        student.이름 = "홍길동";
+        student.취미 = "낚시";
+        student.특기 = "코딩";
+        student.장래희망 = "풀스택 개발자";
+        
+        //객체의 문자열을 반환하는 대표적인 메서드 toString();
+        //모든 자바스크립트 객체는 toString메서들 상속받아 사용가능
+        student.toString=function(){
+            var output="";
+            for(var i in this){
+                if(i != "toString"){
+                    output+= i + ":" +this[i]+"<br>";
+                }
+            }
+            return output;
+        }
+        document.write(student.toString());
+        delete(student.장래희망); //속성제거
+        document.write("================<br>");
+        document.write(student);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

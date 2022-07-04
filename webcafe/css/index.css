@@ -329,7 +329,6 @@
     line-height: 1.8;
 }
 /* news 영역종료 */
-
 /* infoArea 영역 종료 */
 
 /* linkArea 영역 시작 */
@@ -337,4 +336,158 @@
     width: 200px;
     margin-right: 30px;
 }
+.eventrelatedArea{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #fff 0%, #f4f4f4 100%);
+    padding: 10px 13px;
+}
+/* 신규이벤트 영역시작 */
+.event{
+    position: relative;
+}
+.event h2{
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+.event span{
+    color: #ff3c00;
+}
+.event img{
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+.event p{
+    padding: 10px 0;
+    line-height: 1.4;
+}
+.event em{
+    font-style: normal;
+    display: block;
+}
+/*
+ CSS Sprites 기법
+ 하나의 이미지에 여러개의 이미지를 포함하도록 하고
+ 일부분만 보이게 하는 기법
+ */
+ .btnEventArea{
+    position: absolute;
+    top:0;
+    right:0;
+}
+ .btnEventArea a{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 20px;
+    /* CSS Sprites 기법 사용시 background 속성에 기본 position 값과 선택자에 주의해야한다*/
+    background-image: url("images/back_forward.png");
+    background-repeat: no-repeat;
+}
+.btnEventPrev{
+    background-position: 0 0;
+
+}
+.btnEventNext{
+    background-position: 100% 0;
+}
+/* 신규이벤트 영역종료 */
+
+/* 관련 사이트 영역 시작*/
+.relatedLink h2{
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+.relatedLink span{
+    color: #ff3c00;
+}
+.relatedLink ul{
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.relatedLink li{
+    height: 25px;
+    line-height: 25px;
+    text-indent: 1.5em;
+}
+.relatedLink ul:hover{
+    height: 125px;
+    padding: 10px 0;
+
+}
+.relatedLink a{
+    display: block;
+}
+/* 관련 사이트 영역 종료*/
+
+/* 인기 사이트 영역 시작 */
+.hotLink{
+    margin-top: 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #fff 0%, #f4f4f4 100%);
+    padding: 10px 12px 8px 10px;
+}
+.hotLink h2{
+    font-size: 1.2em;
+}
+.hotLink span{
+    color: #ff3c00;
+}
+.hotLink .more{
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    padding: 8px;
+}
+.hotLink ol{
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+.hotLink li:last-child{
+    margin-bottom: 2px;
+}
+.hotLink li{
+    position: relative;
+    margin-top: 7px;
+    counter-increment: number;
+}
+.hotLink li::before{
+    content: counter(number, decimal);
+    padding: 2px 5px;
+    background-color: #a1a1a1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+    color: #fff;
+
+}
+.hotLink em{
+    float: right;
+    width: 8px;
+    height: 0;
+    overflow: hidden;
+    padding-top: 12px;
+    background: url("images/rank.png") no-repeat;
+
+}
+.hotLink .up{
+    background-position: 0 0;
+}
+.hotLink .stop{
+    background-position: 0 50%;
+}
+.hotLink .down{
+    background-position: 0 100%;
+}
+/* 인기 사이트 영역 시작 */
 /* linkArea 영역 종료 */

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 사용</title>
+    <script>
+        //웹페이지가 모두 로드완료된 후 자바스크립트 실행
+        window.onload=function(){
+            var output="";
+            var date=new Date();
+            var hour=date.getHours();
+            output+="<ul>"
+            if(hour>16){
+                output+="<li>후라이드 치킨</li>"
+                output+="<li>양념치킨</li>"
+                output+="<li>골뱅이 무침</li>"
+                output+="<li>과일 안주</li>";
+            }else{
+                output+="<li>김치찌개</li>"
+                output+="<li>된장찌개</li>"
+                output+="<li>순두부 찌개</li>"
+                output+="<li>비빔밥</li>";
+            }
+            output+="</ul>";
+            document.body.innerHTML+=output;
+        }
+    </script>
+</head>
+<body>
+    <h1 id="js">종로 치킨</h1>
+    <h2>주요 메뉴</h2>
+</body>
+</html>

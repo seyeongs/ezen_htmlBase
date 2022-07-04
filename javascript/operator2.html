@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+    <style>
+        #contents{
+            width: 450px;
+            margin: 0 auto;
+        }
+        #contents > img{
+            float: left;
+            margin-right: 20px;
+        }
+        #contents > ul{
+            list-style: none;
+            padding-top: 40px;
+        }
+        #contents li{
+            margin-bottom: 10px;
+        }
+        #contents li label{
+            width: 80px;
+            float: left;
+            text-align: left;
+        }
+        #contents li input{
+            width: 110px;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            margin: 0 5px 0 10px;
+        }
+        #contents button{
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            font-size: 1.1em;
+        }
+        #contents > ul >li:last-child{
+            margin-top: 20px;
+            text-align: center;
+        }
+        #contents button:hover{
+            background-color: #666;
+        }
+        #showResult{
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+    <script>
+        function showPrice(){
+            var oPrice=document.querySelector("#oPrice").value;
+            var rate=document.querySelector("#rate").value;
+            var rPrice=oPrice*(rate/100);
+            var price=oPrice-rPrice;
+            document.querySelector("#showResult").innerHTML = "상품의 정상가는"+oPrice+"원이고 할인률"
+                                                              +rate+"% 할인가는"+price+"원입니다"
+        }
+    </script>
+</head>
+<body>
+    <div id="contents">
+        <img src="images/sale.png" alt="sale">
+        <ul>
+            <li>
+                <label for="oPrice">정상가격</label>
+                <input type="text" id="oPrice">원
+            </li>
+            <li>
+                <label for="rate">할인율</label>
+                <input type="text" id="rate">%
+            </li>
+            <li>
+                <button onclick="showPrice();">할인가격 계산하기</button>
+            </li>
+        </ul>
+        <div id="showResult">
+
+        </div>
+    </div>
+</body>
+</html>
