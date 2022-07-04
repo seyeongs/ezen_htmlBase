@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array객체 제공 메소드</title>
+    <script>
+        //자신을 변화 : pop, push, reverse, sort, splice
+        //자기 자신은 불변: concat, join, slice
+        var fruits1 = ["바바바", "코코넛", "멜론", "참외", "망공", "포도"];
+        var fruits2 = ["사과", "수박", "딸기", "레몬", "파프리카", "자두"];
+        var totalFruits = fruits1.concat(fruits2); //concat(); 배열을 합치는 메소드
+        // alert(totalFruits);
+        
+        //배열을 하나의 문자열로 만들어주는 join("구분기호")
+        // var str = fruits1.join("");
+        // var str = fruits1.join(" ");
+        var str = fruits1.join(":");
+        // alert(str);
+
+        fruits1.push("복숭아", "망고");
+        // alert(fruits1);
+
+        // 맨 앞 인덱스에 요소 추가 unshift();
+        fruits2.unshift("배")
+
+        
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

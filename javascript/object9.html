@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수를 사용해 객체를 만드는 방법</title>
+    <script>
+        // 생성자 함수는 첫 글자 대문자
+        function Book(title, page, price, author){
+            this.title=title;
+            this.page=page;
+            this.price=price;
+            this.author=author;
+        }
+        var html = new Book("웹표준의 정석", 200, 15000, "김철수");
+        var youtube = new Book("유튜브 영상만들기", 120, 17000,"펭수")
+        var python = new Book("파이썬의 정석", 300, 20000, "나도");
+        var bookList=[html, youtube, python];
+
+        document.write("<h2>신간도서 목록</h2>");
+        for(var i=0; i<bookList.length; i++){
+            var someBook = bookList[i];
+            document.write("<br>");
+            for(var key in someBook){
+                document.write(key+" "+someBook[key]+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

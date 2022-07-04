@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array객체 제공 메소드</title>
+    <script>
+        var fruits1 = ["바바바", "코코넛", "멜론", "참외", "망공", "포도"];
+        var fruits2 = ["사과", "수박", "딸기", "레몬", "파프리카", "자두"];
+        fruits1.pop(); //마지막 인덱스 부터 요소 추출
+        console.log(fruits1);
+        fruits2.shift(); //첫 인덱스 부터 요소 추출
+        console.log(fruits2);
+
+        var fruits3 = ["바바바", "코코넛", "멜론", "참외", "망공", "포도"];
+        var fruits4 = ["사과", "수박", "딸기", "레몬", "파프리카", "자두"];
+        //원하는 위치의 요소를 삭제 추가 splice();
+        fruits3.splice(2);//2번 인덱부터 끝 인덱스 까지 삭제
+        console.log(fruits3);
+        
+        fruits4.splice(2,1); //2번 인덱스 부터 (자신포함)1개 인덱스 요소 삭제
+
+        fruits4.splice(2,1,"레몬", "자두"); //2번 인덱스 포함 1개 요소를 삭제하고 레몬, 자두 요소추가
+
+        var fruits5 = ["사과", "수박", "딸기", "레몬", "파프리카", "자두"];
+        fruits5.splice(2, 0, "복숭아") //2번 인덱스 포함 0개를 삭제하고 2번 인덱스에 복숭아 추가
+        alert(fruits5);
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

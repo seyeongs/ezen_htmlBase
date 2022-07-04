@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수로 객체, 메소드 만들기</title>
+    <script>
+        function Student(name, kor, mat, eng, sci){
+            this.name = name;
+            this.kor = kor;
+            this.mat = mat;
+            this.eng = eng;
+            this.sci = sci;
+            this.getSum = function(){
+                return this.kor+this.mat+this.eng+this.sci;
+            }
+            this.getAvg = function(){
+                return this.getSum()/4;
+            }
+            this.toString = function(){
+                return this.name + this.getSum() +" "+ this.getAvg(); 
+            }
+        }
+
+        var namsu = new Student("남수", 50, 60, 55, 70);
+        var jongsu = new Student("종수", 90, 90, 45, 20);
+        var yeonghee = new Student("영희", 40, 60, 99, 100);
+
+        var students = [];
+        students.push(new Student("남수", 50, 60, 55, 70));
+        students.push(new Student("종수", 60, 30, 75, 80));
+        students.push(new Student("영희", 10, 80, 25, 90));
+
+        document.write("<h2>3학년 1반 성적표</h2>");
+        document.write("이름 총점 평균 <br>")
+        for(var i in students){
+            document.write(students[i].toString() + "<br>");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

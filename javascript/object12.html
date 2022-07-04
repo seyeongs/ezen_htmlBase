@@ -1,0 +1,31 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 자료형과 객체의 차이점</title>
+    <script>
+        var num = 1; //일반 자료형
+        alert(typeof(num));
+
+        var objNum = new Number(200);
+        alert(typeof(objNum));
+
+        num.corona = function(){
+            return "코로나 박멸"
+        }
+        objNum.corona = function(){
+            return "코로나 박멸"
+        }
+        alert(num.corona()); //일반형은 매소드 노노
+        alert(objNum.corona()); //객체는 쌉가능
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

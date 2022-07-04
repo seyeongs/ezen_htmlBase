@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array객체</title>
+    <script>
+        var fruits = ["사과", "수박", "딸기", "레몬", "파프리카", "자두"];
+        var newFruits = fruits.slice(2); //2번 인덱스 부터 끝 인덱스 까지 잘라서 반환
+        alert(fruits); //slice해도 fruits배열은 그대로다
+        alert(newFruits);
+        var sFruits = fruits.slice(1,4); //1인덱스 포함 4인덱스 전 요소 반환
+        alert(sFruits)
+        var nums = [102,10,203,120];
+        nums.sort();
+        alert(nums);
+        fruits.reverse(); //배열 순서를 반대로
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
